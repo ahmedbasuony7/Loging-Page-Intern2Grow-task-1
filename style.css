@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+.main{
+    display: flex;
+}
+.container{
+    display: block;
+}
+.img img{
+    max-width: 100%;
+}
+.login{
+    margin: 50px 50px 100px 0px;
+}
+.sign-in{
+    display: flex;
+    position: absolute;
+    left: 75%;
+    color: black;
+    margin-right: 20px;
+}
+.sign-in a{
+    color: black;
+}
+.text{
+    margin: 150px 0px 50px 80px;
+    font-size: xx-large;
+}
+.continue-google ,
+.continue-twitter{
+    display: flex;
+    width: 450px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 20px 30px 20px 160px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.continue-google p,
+.continue-twitter p{
+    font-size: larger;
+}
+.fa-google{
+    margin-right: 10px;
+    font-size: x-large;
+    color: blue;
+}
+.fa-twitter{
+    color: dodgerblue;
+    margin-right: 10px;
+    font-size: x-large;
+}
+.or-ele{
+    text-align: center;
+    margin: 50px 0px 60px 120px;
+    position: relative;
+}
+.or-ele::before,
+.or-ele::after{
+    position: absolute;
+    content: '';
+    width:200px;
+    height: 2px;
+    background-color: #ccc;
+}
+.or-ele::before{
+    right:60%;
+    top: 45%;
+}
+.or-ele::after{
+    left: 60%;
+    top: 45%;
+}
+.address,
+.password{
+    margin-left: 120px;
+}
+#email,
+#password{
+    width: 500px;
+    height: 50px;
+    border: #ccc 2px solid;
+    outline: none;
+    border-radius: 10px;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.eye{
+    position: relative;
+}
+.hide{
+    position: absolute;
+    left: 84%;
+    margin-top: 22px;
+}
+.forget-password{
+    position: relative;
+}
+.forget-password a{
+    position: absolute;
+    left: 70%;
+    margin-top: 10px;
+    color:  black;
+}
+.sign{
+    position: relative;
+}
+.button-sign{
+    position: absolute;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    left: 20%;
+    top: 20%;
+    transform: translateY(50px);
+    
+    background-color: darkgoldenrod;
+}
+.sign .sign-in {
+    position: absolute;
+    left: 20%;
+    transform: translateY(150px);
+    color: black;
+    margin-right: 20px;
+}
+
+
+
+@media(max-width:1230px){
+    .main{
+        flex-wrap: wrap;
+    }
+    .text{
+        margin: 150px 0px 50px 0px;
+        text-align: center;
+    }
+}
+@media(min-width:767px) and (max-width:975px){
+    .img img{
+        max-width: 100%;
+    }
+    .sign-in{
+        left: 50%;
+        margin: 0px;
+        width: fit-content;
+    }
+    .text{
+        margin: 150px 0px 50px 0px;
+        text-align: center;
+    }
+    .sign-bottom{
+        margin: 0px;
+        left: 0%;
+        transform: translateY(150px);
+    }
+}
+@media(max-width:767px){
+    .sign-in{
+        left: 25%;
+        margin: 0px;
+        width: fit-content;
+    }
+    .img img{
+        max-width: 100%;
+    }
+.continue-google ,
+.continue-twitter{
+    width: 350px;
+    left: 0%;
+    margin: 20px 0px  0px  0px;
+}
+.text{
+    margin: 150px 0px 50px 0px;
+    text-align: center;
+}
+.or-ele{
+    left: 0%;
+    margin: 20px 0px 30px 0px ;
+    text-align: center;
+}
+.or-ele::after{
+    left: 60%;
+}
+.or-ele::before{
+    left: 12%; 
+}
+.or-ele::before,
+.or-ele::after{
+    width: 100px;
+}
+#email,
+#password{
+    margin: 10px;
+    width: 350px;
+}
+.address,
+.password{
+    margin: 0px;
+}
+.forget-password {
+    margin-right: 50px;
+}
+.forget-password a{
+    left: 50%;
+    margin-top: 10px;
+}
+.hide{
+    left: 80%;
+}
+.sign {
+    margin: 0px;
+}
+.sign button{
+    top: 0px;
+    left: 0%;
+    margin-top: 0px;
+}
+.sign-bottom{
+    left: 0%;
+    margin-top: 150px;
+}
+
+
+}
+
+
+
